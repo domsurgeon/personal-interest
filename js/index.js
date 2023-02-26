@@ -76,7 +76,7 @@ function getResult(testInterest) {
       c++;
     }
     resultEl.innerHTML = `Interest needed: ${
-      interest * 100
+      (interest * 100)
     }% - End capital: $${lastCapital}`;
 
     interestEl.value = interest;
@@ -85,7 +85,7 @@ function getResult(testInterest) {
   } else {
     lastCapital = endCapFromInterest(interest);
     result2El.innerHTML = `Interest needed: ${
-      interest * 100
+      (interest * 100)
     }% - End capital: $${lastCapital}`;
   }
 
@@ -146,5 +146,9 @@ function getResult(testInterest) {
 
   function decrease(inter) {
     return inter - inter / 2;
+  }
+
+  if(!testInterest){
+    getResult(true)
   }
 }
