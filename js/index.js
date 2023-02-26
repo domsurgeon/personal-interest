@@ -103,7 +103,7 @@ function getResult(testInterest) {
         (Math.round(arrSavings[i - 1] * interest) || 0) +
         (a !== age && wage && age + i - 1 < ageend ? wage * 12 : 0) -
         (arrAnualExpense[i - 1]?.exp || 0)
-      } (total)</h3>${
+      } (save)</h3>${
         i === arrAge.length - 1
           ? `<h3>Beginning age ${
               a + 1
