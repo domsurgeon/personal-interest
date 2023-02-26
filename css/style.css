@@ -1,0 +1,37 @@
+body {
+  align-items: center;
+  background-color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+  margin: 0 0 15px;
+  padding: 0 25%;
+  width: 100%;
+  box-sizing: border-box;
+}
+p span {
+  display: inline-block;
+  width: 220px;
+}
+
+h3{
+  font-weight: 700;
+  text-align: center;
+  margin: 15px 0 25px;
+}
+h1 {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.sml {
+  font-size: 12px;
+}
+.sml p {
+  margin: 0 0 10px;
+}
+.max{
+  font-size: 16px;
+}

@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Intecal</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <p>
+      <sub
+        >This tool will calculate the minimum interest you should expect from
+        your investments, by finding an equilibrium with your expenses and
+        savings expectations.</sub
+      >
+    </p>
+    <h1>Intecal</h1>
+    <div id="app">
+      <p>
+        <span>Age:</span>
+        <input type="text" id="age" value="38" />
+      </p>
+      <p>
+        <span>Month outflow ($):</span>
+        <input type="text" id="outflow" value="1100" />
+        usd
+      </p>
+      <p>
+        <span>Savings ($): </span>
+        <input type="text" id="savings" value="100000" />
+        usd
+      </p>
+      <p>
+        <span>Savings at age 89 ($):</span>
+        <input type="text" id="endcapital" value="5000" />
+        usd
+      </p>
+      <p>
+        <span>Month Wage ($): </span>
+        <input type="text" id="wage" value="0" /> usd
+      </p>
+      <p>
+        <span>Wage ending age: </span>
+        <input type="text" id="ageend" value="0" />
+      </p>
+      <p><button onclick="getResult()">Calc</button></p>
+      <h3 id="result"></h3>
+      <p>
+        <span>Edit Interest:</span>
+        <input type="text" id="interest" value="0" />
+        <button onclick="getResult(true)">Calc</button>
+      </p>
+      <h3 id="result-interest"></h3>
+      <div id="result-ages" class="sml"></div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
